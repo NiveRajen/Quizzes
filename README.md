@@ -1,7 +1,8 @@
 # Quizzes
 
 
-#Quiz 1
+# Quiz 1
+-
 Please explain if this function is fully isolated on the MainActor.
 
 @MainActor
@@ -11,9 +12,10 @@ func someWork() async {
 	someVar = "Done"
 }
 
+Answer: We can say someWork() is fully isolated on Main thread if otherWork() is also marked with @Mainactor, else it will run on different thread.
 
-
-#Quiz 2
+# Quiz 2
+-
 
 This code MIGHT have ONE error. IF there is one, can you explain what it is in a short sentence (maximum 128 characters long)? Please answer in the application form.
 
@@ -49,12 +51,16 @@ struct BasketballGameView: View {
    }
 }
 
-#Quiz 3
+Answer: Score instance instantiated on every BasketballGameView update. Inject teamAScore,teamBScore to ScoreView, reset on next quarter.
+
+# Quiz 3
+
+Swift Quiz - Thread Safety Quiz
+-
 
 What potential issues do you see with this code? How would you improve it?
 
 
-// iOS Interview Question #16
 func testThreadSafetyiniOSQuestion() {
     let group = DispatchGroup()
     var sharedResource = 0
@@ -228,3 +234,24 @@ Solution 1: Actors
 Solution 2: NSLock
 Solution 3: Atomic
 Solution 4: Semaphore
+
+
+# Quiz 6
+
+
+Swift Quiz - Swift Structs
+-
+
+struct UserData {
+  var username: String
+}
+
+var user1 = UserData(username: "Nivedha")
+var user2 = user1
+
+In Swift, when you copy a value type, like a struct, both copies (e.g., User1 and User2) will point to the same memory location at first. This means they share the same data. However, once one of them is changed or modified, Swift creates a new copy of the data, giving each copy its own separate memory space. This process is called Copy-On-Write (COW). Here the value isn't modified yet.
+References: https://www.youtube.com/watch?v=nb3bRQa0iGQ,
+https://developer.apple.com/videos/play/wwdc2016/416,
+iOS Memory Deep Dive,
+Analyze Heap Memory,
+Detect and Diagnose Memory Issues.
