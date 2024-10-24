@@ -2,6 +2,8 @@
 
 
 # Quiz 1
+
+Swift Quiz - Concurrency
 -
 Please explain if this function is fully isolated on the MainActor.
 
@@ -15,6 +17,8 @@ func someWork() async {
 Answer: We can say someWork() is fully isolated on Main thread if otherWork() is also marked with @Mainactor, else it will run on different thread.
 
 # Quiz 2
+
+Swift Quiz - SwiftUI
 -
 
 This code MIGHT have ONE error. IF there is one, can you explain what it is in a short sentence (maximum 128 characters long)? Please answer in the application form.
@@ -255,3 +259,37 @@ https://developer.apple.com/videos/play/wwdc2016/416,
 iOS Memory Deep Dive,
 Analyze Heap Memory,
 Detect and Diagnose Memory Issues.
+
+# Quiz 7
+
+Swift Quiz - struct
+-
+struct Car {
+   var name: String
+   private var price: Int = 100
+}
+
+let car = Car(name: "xyz")
+car.name = "abc"
+print(car.name)
+
+The above snippet can be written as,
+
+struct Car {
+   var name: String
+   private var price: Int = 100
+
+   init(name: String) {
+   	self.name = name
+   }
+}
+
+let car = Car(name: "xyz")
+car.name = "abc"
+print(car.name)
+
+
+Answer: Compilation error, 1. you cannot assign "abc" to name property as car instance is "let".
+2. Price is a private variable which is not accessible outside.
+3. Default initializer for all properties of the struct that's an issue because compiler will try to use private property in default initialization.
+
