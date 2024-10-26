@@ -7,7 +7,7 @@ Swift Quiz - Concurrency
 -
 Please explain if this function is fully isolated on the MainActor.
 
-```Swift Concurrency
+```Swift
 @MainActor
 func someWork() async {
 	var someVar = ""
@@ -25,7 +25,7 @@ Swift Quiz - SwiftUI
 
 This code MIGHT have ONE error. IF there is one, can you explain what it is in a short sentence (maximum 128 characters long)? Please answer in the application form.
 
-```Error
+```Swift
 import SwiftUI
 
 class Score: ObservableObject {
@@ -68,7 +68,7 @@ Swift Quiz - Thread Safety Quiz
 
 What potential issues do you see with this code? How would you improve it?
 
-```Thread safety
+```Swift
 func testThreadSafetyiniOSQuestion() {
     let group = DispatchGroup()
     var sharedResource = 0
@@ -95,7 +95,7 @@ Key issues:
 Race Condition: Multiple threads access and modify sharedResource without synchronization. Non-Atomic Operation: The += operation isn't atomic, leading to potential data races. Unpredictable Results: The final value of sharedResource is likely to be less than 1000 and may vary between runs.
 
 Solutions 1. Using Atomic Operations
-```
+```Swift
 import Foundation
 
 class AtomicInteger {
@@ -132,7 +132,7 @@ func improvedThreadSafetyQuestion() {
 }
 ```
 Solutions 2. Using Actor (Swift 5.5+)
-```
+```Swift
 actor SharedResource {
     private(set) var value = 0
     
@@ -155,7 +155,7 @@ func actorBasedSolution() async {
 }
 ```
 Solutions 3.Using Serial Queue
-```
+```Swift
 func serialQueueSolution() {
     let group = DispatchGroup()
     var sharedResource = 0
@@ -182,7 +182,7 @@ Swift Quiz - Closure
 -
 
 What would be the output for the below code ?
-```Closure
+```Swift
 import Foundation
 
 //1. Vehicle Closure
@@ -218,7 +218,7 @@ Swift Quiz - Thread Safety Quiz
 -
 
 // Is this code thread-safe in a concurrent environment? If not, how would you modify it? 
-```Thread Safety
+```Swift
 class BankAccount {
   private var balance: Double = 0.0 
   
@@ -250,7 +250,7 @@ Solution 4: Semaphore
 
 Swift Quiz - Swift Structs
 -
-```Structs
+```Swift
 struct UserData {
   var username: String
 }
@@ -269,7 +269,7 @@ Detect and Diagnose Memory Issues.
 
 Swift Quiz - struct
 -
-```structs
+```Swift
 struct Car {
    var name: String
    private var price: Int = 100
@@ -280,7 +280,7 @@ car.name = "abc"
 print(car.name)
 ```
 The above snippet can be written as,
-```
+```Swift
 struct Car {
    var name: String
    private var price: Int = 100
