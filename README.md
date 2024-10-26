@@ -300,3 +300,37 @@ Answer: Compilation error, 1. you cannot assign "abc" to name property as car in
 2. Price is a private variable which is not accessible outside.
 3. Default initializer for all properties of the struct that's an issue because compiler will try to use private property in default initialization.
 
+
+# Quiz 8
+
+Swift Quiz - Defer
+-
+What will be the output when this code is executed?
+```Swift
+Consider the following code snippet:
+class MyClass {
+var myProperty: Int = 0 {
+willSet {
+print("Will set to \(newValue)")
+}
+didSet {
+print("Did set from \(oldValue) to \(myProperty)")
+}
+}
+init() {
+defer { myProperty = 1 }
+myProperty = 2
+}
+}
+let instance = MyClass()
+instance.myProperty = 3
+
+Output:
+Will set to 2
+Did set from 0 to 2
+Will set to 1
+Did set from 2 to 1
+Will set to 3
+Did set from 1 to 3
+
+Note: Sometimes, Xcode's console might not display all output immediately, especially if the output is rapid. The output might get buffered, leading to some lines being printed while others might not appear immediately.
