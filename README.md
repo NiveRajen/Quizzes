@@ -14,6 +14,7 @@ func someWork() async {
 	await otherWork()
 	someVar = "Done"
 }
+```
 
 Answer: We can say someWork() is fully isolated on Main thread if otherWork() is also marked with @Mainactor, else it will run on different thread.
 
