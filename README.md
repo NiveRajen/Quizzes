@@ -324,7 +324,7 @@ myProperty = 2
 }
 let instance = MyClass()
 instance.myProperty = 3
-
+```
 Output:
 Will set to 2
 Did set from 0 to 2
