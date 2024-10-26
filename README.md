@@ -7,6 +7,7 @@ Swift Quiz - Concurrency
 -
 Please explain if this function is fully isolated on the MainActor.
 
+```Swift Concurrency
 @MainActor
 func someWork() async {
 	var someVar = ""
