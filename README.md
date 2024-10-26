@@ -25,6 +25,7 @@ Swift Quiz - SwiftUI
 
 This code MIGHT have ONE error. IF there is one, can you explain what it is in a short sentence (maximum 128 characters long)? Please answer in the application form.
 
+```Error
 import SwiftUI
 
 class Score: ObservableObject {
@@ -56,6 +57,7 @@ struct BasketballGameView: View {
        }
    }
 }
+```
 
 Answer: Score instance instantiated on every BasketballGameView update. Inject teamAScore,teamBScore to ScoreView, reset on next quarter.
 
@@ -66,7 +68,7 @@ Swift Quiz - Thread Safety Quiz
 
 What potential issues do you see with this code? How would you improve it?
 
-
+```Thread safety
 func testThreadSafetyiniOSQuestion() {
     let group = DispatchGroup()
     var sharedResource = 0
@@ -86,13 +88,14 @@ func testThreadSafetyiniOSQuestion() {
 
 // function call
 testThreadSafetyiniOSQuestion()
+```
 
 Answer: 
 Key issues:
 Race Condition: Multiple threads access and modify sharedResource without synchronization. Non-Atomic Operation: The += operation isn't atomic, leading to potential data races. Unpredictable Results: The final value of sharedResource is likely to be less than 1000 and may vary between runs.
 
 Solutions 1. Using Atomic Operations
-
+```
 import Foundation
 
 class AtomicInteger {
@@ -127,9 +130,9 @@ func improvedThreadSafetyQuestion() {
         print("Final value: $$sharedResource.increment())")
     }
 }
-
+```
 Solutions 2. Using Actor (Swift 5.5+)
-
+```
 actor SharedResource {
     private(set) var value = 0
     
@@ -150,9 +153,9 @@ func actorBasedSolution() async {
     }
     print("Final value: $$await resource.value)")
 }
-
+```
 Solutions 3.Using Serial Queue
-
+```
 func serialQueueSolution() {
     let group = DispatchGroup()
     var sharedResource = 0
@@ -170,7 +173,7 @@ func serialQueueSolution() {
         print("Final value: $$sharedResource)")
     }
 }
-
+```
 
 # Quiz 4
 
@@ -179,7 +182,7 @@ Swift Quiz - Closure
 -
 
 What would be the output for the below code ?
-
+```Closure
 import Foundation
 
 //1. Vehicle Closure
@@ -197,7 +200,7 @@ var fruit = "mangoes" let fruitClosure = {
   }
 fruit = "banana"
 fruitClosure ()
-
+```
 Answer: 
 1. I love cars
 2. I love banana
@@ -215,7 +218,7 @@ Swift Quiz - Thread Safety Quiz
 -
 
 // Is this code thread-safe in a concurrent environment? If not, how would you modify it? 
-
+```Thread Safety
 class BankAccount {
   private var balance: Double = 0.0 
   
@@ -234,7 +237,7 @@ func withdraw(amount: Double) -> Bool {
 func getBalance() -> Double {
   return balance 
 } 
-
+```
 Issue: Race conditions will happen.
 Solution 1: Actors
 Solution 2: NSLock
@@ -247,14 +250,14 @@ Solution 4: Semaphore
 
 Swift Quiz - Swift Structs
 -
-
+```Structs
 struct UserData {
   var username: String
 }
 
 var user1 = UserData(username: "Nivedha")
 var user2 = user1
-
+```
 In Swift, when you copy a value type, like a struct, both copies (e.g., User1 and User2) will point to the same memory location at first. This means they share the same data. However, once one of them is changed or modified, Swift creates a new copy of the data, giving each copy its own separate memory space. This process is called Copy-On-Write (COW). Here the value isn't modified yet.
 References: https://www.youtube.com/watch?v=nb3bRQa0iGQ,
 https://developer.apple.com/videos/play/wwdc2016/416,
@@ -266,6 +269,7 @@ Detect and Diagnose Memory Issues.
 
 Swift Quiz - struct
 -
+```structs
 struct Car {
    var name: String
    private var price: Int = 100
@@ -274,9 +278,9 @@ struct Car {
 let car = Car(name: "xyz")
 car.name = "abc"
 print(car.name)
-
+```
 The above snippet can be written as,
-
+```
 struct Car {
    var name: String
    private var price: Int = 100
@@ -289,6 +293,7 @@ struct Car {
 let car = Car(name: "xyz")
 car.name = "abc"
 print(car.name)
+```
 
 
 Answer: Compilation error, 1. you cannot assign "abc" to name property as car instance is "let".
