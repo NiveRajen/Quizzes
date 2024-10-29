@@ -338,3 +338,29 @@ Will set to 3
 Did set from 1 to 3
 
 Note: Sometimes, Xcode's console might not display all output immediately, especially if the output is rapid. The output might get buffered, leading to some lines being printed while others might not appear immediately.
+
+# Quiz 8
+
+Swift Quiz - Concurrency
+-
+```swift
+//What will be the output?
+actor counter {
+   var counter = 0
+
+   func increment() {
+      counter += 1
+   }
+}
+
+let counter = Counter()
+
+Task {
+   await counter.increment()
+}
+
+print(await.counter.count)
+```
+
+Answer: Compiler Error.
+Reason: Await can only be used within an asynchronous context, like a function marked async or within a Task block.
