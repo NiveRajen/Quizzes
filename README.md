@@ -364,3 +364,41 @@ print(await.counter.count)
 
 Answer: Compiler Error.
 Reason: Await can only be used within an asynchronous context, like a function marked async or within a Task block.
+
+
+# Quiz 8
+
+SwiftUI Quiz
+-
+```swift
+//What will the LazyVGrid display when the following code is executed?
+struct ContentView: View {
+    let items = Array(1...6).map { "Item \($0)" }
+    
+    let columns = [
+        GridItem(.fixed(100)),
+        GridItem(.flexible()),
+        GridItem(.fixed(100))
+    ]
+    
+    var body: some View {
+        LazyVGrid(columns: columns) {
+            ForEach(items, id: \.self) { item in
+                Text(item)
+                    .padding()
+                    .background(Color.blue)
+            }
+        }
+        .padding()
+    }
+}
+
+//Options:
+#1. 6 items displayed in 2 rows with uneven column widths
+#2. 6 items displayed in 1 column
+#3. 6 items displayed in 3 rows with equal column widths
+#4. 6 items displayed in 2 rows with equal column widths
+
+Answer:
+6 items displayed in 2 rows with uneven column widths
+```
