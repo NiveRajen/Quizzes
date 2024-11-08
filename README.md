@@ -407,6 +407,7 @@ Answer:
 # Quiz 9
 
 Swift Quiz
+-
 
 ```swift
 func addTwoNumbers(_ first: Int, _ second: Int) -> Int {
