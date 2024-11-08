@@ -403,3 +403,22 @@ struct ContentView: View {
 Answer:
 6 items displayed in 2 rows with uneven column widths
 ```
+
+# Quiz 9
+
+Swift Quiz
+
+```swift
+func addTwoNumbers(_ first: Int, _ second: Int) -> Int {
+   return first + second
+}
+```
+
+```swift
+#1. let sum = addTwoNumbers()
+#2. let sum = addTwoNumbers(first: 4, second: 6)
+#3. let sum = addTwoNumbers(4, 6) - correct
+#4. let sum = addTwoNumbers(_ 4, _ 6)
+```
+
+Here the argumentLabel is omitted. Hence no need to pass parameter name.
