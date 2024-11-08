@@ -392,7 +392,8 @@ struct ContentView: View {
         .padding()
     }
 }
-
+```
+```swift
 //Options:
 #1. 6 items displayed in 2 rows with uneven column widths
 #2. 6 items displayed in 1 column
