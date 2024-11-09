@@ -444,6 +444,11 @@ extension Int {
 var number = 2
 number.square()
 ```
+Options:
+1. This code generates a compilation error
+2. 8
+3. 4
+4. 2
 
 Output:
 4
