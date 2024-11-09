@@ -426,3 +426,24 @@ Answer:
 ```
 
 Here the argumentLabel is omitted. Hence no need to pass parameter name.
+
+
+# Quiz 10
+
+Swift Quiz
+-
+
+```swift
+//What is the value of number after executing this code?
+extension Int {
+    mutating func square() {
+        self = self * self
+    }
+}
+
+var number = 2
+number.square()
+```
+
+Output:
+4
