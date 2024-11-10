@@ -452,3 +452,22 @@ Options:
 
 Output:
 4
+
+# Quiz 10
+
+Combine Quiz
+-
+```swift
+//What will be the output?
+let value = [1,2,3,4,5,6,7,8,9]
+let result = value
+		.lazy
+		.filter { value in
+			value % 2 != 0
+		}
+		.map { value in
+			value * value
+		}
+		.prefix(3)
+```
+Output: [1,9,25]
