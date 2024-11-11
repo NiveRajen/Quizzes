@@ -471,3 +471,23 @@ let result = value
 		.prefix(3)
 ```
 Output: [1,9,25]
+
+
+# Quiz 11
+
+Swift Quiz
+-
+```swift
+if (1, "banana") < (2, "apple") {
+    print("Alpha")
+}
+if (2, "mango") < (2, "peach") {
+    print("Beta")
+}
+if (3, "avacado") < (2, "guava") {
+    print("Delta")
+}
+```
+Answer: 
+Alpha
+Beta
