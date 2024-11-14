@@ -491,3 +491,17 @@ if (3, "avacado") < (2, "guava") {
 Answer: 
 Alpha
 Beta
+
+# Quiz 12
+
+Swift Quiz
+-
+
+Which of the following is not a valid control transfer statement in swift?
+
+1. break
+2. goto
+3. continue
+4. return
+
+Answer: Goto
