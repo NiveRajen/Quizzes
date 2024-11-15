@@ -505,3 +505,30 @@ Which of the following is not a valid control transfer statement in swift?
 4. return
 
 Answer: Goto
+
+# Quiz 12
+
+Swift Quiz
+-
+Given the code snippet below, which aims to create an array of tuples containing the index and value of each element in an array, rewrite it in a more "Swifty" and efficient way.
+
+Before:
+```swift
+let list = [Int](1...5)
+var arrayOfTuples = [(Int, Int)]()
+
+for (index, element) in list.enumerated() {
+    arrayOfTuples += [(index, element)]
+}
+
+print(arrayOfTuples)
+// Expected output: [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+```
+
+After:
+```swift
+let list = [Int](1...5)
+let arrayOfTuples = Array(list.enumerated())
+print(arrayOfTuples)
+// Expected output: [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+```
