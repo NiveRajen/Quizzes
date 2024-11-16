@@ -532,3 +532,17 @@ let arrayOfTuples = Array(list.enumerated())
 print(arrayOfTuples)
 // Expected output: [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
 ```
+
+# Quiz 13
+
+Swift Quiz
+-
+Select the correct statement that creates a dictionary wuth a key type of Int and a value type of String
+
+```swift
+1. var dict = [1, "Tokyo"]()
+2. var dict[Int, String] = [1, "Tokyo"]
+3. var dict = [1, "Tokyo"]
+4. var dict = [1: "Tokyo"]
+```
+Answer: 4
