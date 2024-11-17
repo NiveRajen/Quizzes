@@ -546,3 +546,26 @@ Select the correct statement that creates a dictionary wuth a key type of Int an
 4. var dict = [1: "Tokyo"]
 ```
 Answer: 4
+
+# Quiz 14
+
+Swift Quiz
+-
+What is the value of variable greeting, after executing the following code?
+
+```swift
+let firstName: String?
+let middleName: String? = nil
+let lastName = "Jackson"
+
+let greeting = "Hi, \(firstName ?? middleName ?? lastName)"
+```
+
+```swift
+1. nil
+2. Jackson
+3. This code generates a compliation error
+4. Hi, Jackson
+```
+
+Answer: Option 3, firstName used before being initialized. 
