@@ -569,3 +569,51 @@ let greeting = "Hi, \(firstName ?? middleName ?? lastName)"
 ```
 
 Answer: Option 3, firstName used before being initialized. 
+
+# Quiz 15
+
+Swift Coding Quiz
+-
+The goal of this exercise is to check the presence of a number in an array.
+
+**Specifications:**
+* The items are integers arranged in ascending order.
+* The array can contain up to 1 million items
+  
+Implement the function existsInArray(_numbers: [Int], k: Int) so that it returns true if k belongs to numbers, otherwise the function should return false.
+ 
+**Example:**
+let numbers = [-9, 14, 37, 102]
+existsInArray(numbers, 102) returns true
+existsInArray(numbers, 36) returns false
+
+**Note:** Try to save CPU cycles
+
+```swift
+//using swift operator
+func existsInArray(_numbers: [Int], k: Int) -> Bool {
+    return _numbers.contains(k)
+}
+
+//using Binary search
+func existsInArrayUsingBinarySearch(_numbers: [Int], k: Int) -> Bool {
+    var left = 0
+    var right = _numbers.count - 1 
+    
+    
+    
+    while left <= right {// 0 <= 0
+        let mid = left + (right - left) / 2 
+        
+        if _numbers[mid] == k { 
+            return true
+        } else if _numbers[mid] < k { 
+            left = mid + 1
+        } else {
+            right = mid - 1 
+        }
+    }
+    
+    return false
+}
+```
