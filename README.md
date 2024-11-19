@@ -617,3 +617,18 @@ func existsInArrayUsingBinarySearch(_numbers: [Int], k: Int) -> Bool {
     return false
 }
 ```
+
+# Quiz 16
+
+Swift Quiz
+-
+Select the correct statement which can be used to identify if a given variable is an array of Int elements.
+
+```swift
+1. if variable == Array {}
+2. if variable is [Int] {}
+3. if variable == [Int] {}
+4. if variable is Array {}
+```
+
+**Answer**: 3 
