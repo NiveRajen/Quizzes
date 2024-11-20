@@ -632,3 +632,18 @@ Select the correct statement which can be used to identify if a given variable i
 ```
 
 **Answer**: 3 
+
+
+# Quiz 17
+
+Swift Quiz
+-
+Select the invalid statement from the following answers
+
+```
+1. var name: String? = "John"
+2. var age: Int = nil
+3. var average: Double? = 75
+4. let score: Float = 86.7
+```
+**Answer**: 2
