@@ -339,7 +339,7 @@ Did set from 1 to 3
 
 Note: Sometimes, Xcode's console might not display all output immediately, especially if the output is rapid. The output might get buffered, leading to some lines being printed while others might not appear immediately.
 
-# Quiz 8
+# Quiz 9
 
 Swift Quiz - Concurrency
 -
@@ -366,7 +366,7 @@ Answer: Compiler Error.
 Reason: Await can only be used within an asynchronous context, like a function marked async or within a Task block.
 
 
-# Quiz 8
+# Quiz 10
 
 SwiftUI Quiz
 -
@@ -404,7 +404,7 @@ Answer:
 6 items displayed in 2 rows with uneven column widths
 ```
 
-# Quiz 9
+# Quiz 11
 
 Swift Quiz
 -
@@ -428,7 +428,7 @@ Answer:
 Here the argumentLabel is omitted. Hence no need to pass parameter name.
 
 
-# Quiz 10
+# Quiz 12
 
 Swift Quiz
 -
@@ -453,7 +453,7 @@ Options:
 Output:
 4
 
-# Quiz 10
+# Quiz 13
 
 Combine Quiz
 -
@@ -473,7 +473,7 @@ let result = value
 Output: [1,9,25]
 
 
-# Quiz 11
+# Quiz 14
 
 Swift Quiz
 -
@@ -492,7 +492,7 @@ Answer:
 Alpha
 Beta
 
-# Quiz 12
+# Quiz 15
 
 Swift Quiz
 -
@@ -506,7 +506,7 @@ Which of the following is not a valid control transfer statement in swift?
 
 Answer: Goto
 
-# Quiz 12
+# Quiz 16
 
 Swift Quiz
 -
@@ -533,7 +533,7 @@ print(arrayOfTuples)
 // Expected output: [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
 ```
 
-# Quiz 13
+# Quiz 17
 
 Swift Quiz
 -
@@ -547,7 +547,7 @@ Select the correct statement that creates a dictionary wuth a key type of Int an
 ```
 Answer: 4
 
-# Quiz 14
+# Quiz 18
 
 Swift Quiz
 -
@@ -570,7 +570,7 @@ let greeting = "Hi, \(firstName ?? middleName ?? lastName)"
 
 Answer: Option 3, firstName used before being initialized. 
 
-# Quiz 15
+# Quiz 19
 
 Swift Coding Quiz
 -
@@ -618,7 +618,7 @@ func existsInArrayUsingBinarySearch(_numbers: [Int], k: Int) -> Bool {
 }
 ```
 
-# Quiz 16
+# Quiz 20
 
 Swift Quiz
 -
@@ -634,7 +634,7 @@ Select the correct statement which can be used to identify if a given variable i
 **Answer**: 3 
 
 
-# Quiz 17
+# Quiz 21
 
 Swift Quiz
 -
@@ -649,7 +649,7 @@ Select the invalid statement from the following answers
 **Answer**: 2
 
 
-# Quiz 18
+# Quiz 22
 
 Swift Quiz
 -
