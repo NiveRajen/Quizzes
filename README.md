@@ -647,3 +647,24 @@ Select the invalid statement from the following answers
 4. let score: Float = 86.7
 ```
 **Answer**: 2
+
+
+# Quiz 18
+
+Swift Quiz
+-
+
+What are the scores for Dave after executing following code?
+
+var scores = ["Dave": [75, 86], "Steve": [94, 78]]
+
+scores["Dave"]?[0] += 1
+scores["Brian"]?[0] = 60
+
+**Options:**
+1. [94,78]
+2. [76,86]
+3. [75,86]
+4. Compilation error
+
+**Answer**: 2
