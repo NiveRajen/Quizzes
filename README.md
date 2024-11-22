@@ -668,3 +668,17 @@ scores["Brian"]?[0] = 60
 4. Compilation error
 
 **Answer**: 2
+
+# Quiz 23
+
+Swift Quiz
+-
+Select the correct function that takes an argument of a generic type.
+
+**Options:**
+1. func function<T>(argument: T)()
+2. func function<T>(argument)()
+3. func function(argument)()
+4. 2. func function(argument: <T>)()
+
+**Answer**: 1
