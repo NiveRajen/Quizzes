@@ -682,3 +682,6 @@ Select the correct function that takes an argument of a generic type.
 4. 2. func function(argument: <T>)()
 
 **Answer**: 1
+
+
+
