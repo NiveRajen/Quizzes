@@ -683,5 +683,14 @@ Select the correct function that takes an argument of a generic type.
 
 **Answer**: 1
 
+# Quiz 24
 
+Swift Quiz
+-
+What is the generic class that implements all the basic behaviour of a Core Data model object?
+1. Core Data
+2. NSManagedObject
+3. NSManagedObjectContext
+4. SQLite
+NSManagedObject is a generic class that implements all the basic behavior required of a managed object. You can create custom subclasses of NSManagedObject , although this is often not required.
 
