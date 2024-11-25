@@ -692,5 +692,18 @@ What is the generic class that implements all the basic behaviour of a Core Data
 2. NSManagedObject
 3. NSManagedObjectContext
 4. SQLite
+   
+**Answer**: 2
 NSManagedObject is a generic class that implements all the basic behavior required of a managed object. You can create custom subclasses of NSManagedObject , although this is often not required.
 
+# Quiz 25
+
+Swift Quiz
+-
+Select the correct syntax for iterating through the keys and values of a Dictionary type variable called scores.
+1. for (key,value) in scores {}
+2. for (key,value) in (scores.keys, scores.values) {}
+3. for (key,value) in enumerate(scores) {}
+4. or value in scores.key {}
+   
+**Answer**: 1
