@@ -707,3 +707,15 @@ Select the correct syntax for iterating through the keys and values of a Diction
 4. or value in scores.key {}
    
 **Answer**: 1
+
+# Quiz 26
+
+Swift Quiz
+-
+What is the centralized point of control of an iOS app?
+1. Main Storyboard
+2. AppDelegate
+3. Main ViewController
+4. UIApplication
+   
+**Answer**: 2
