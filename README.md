@@ -1,7 +1,7 @@
 # Quizzes
 
 
-# Quiz 1
+# Quiz 1 -
 
 Swift Quiz - Concurrency
 -
@@ -537,7 +537,7 @@ print(arrayOfTuples)
 
 Swift Quiz
 -
-Select the correct statement that creates a dictionary wuth a key type of Int and a value type of String
+Select the correct statement that creates a dictionary with a key type of Int and a value type of String
 
 ```swift
 1. var dict = [1, "Tokyo"]()
@@ -655,12 +655,12 @@ Swift Quiz
 -
 
 What are the scores for Dave after executing following code?
-
+```swift
 var scores = ["Dave": [75, 86], "Steve": [94, 78]]
 
 scores["Dave"]?[0] += 1
 scores["Brian"]?[0] = 60
-
+```
 **Options:**
 1. [94,78]
 2. [76,86]
@@ -719,3 +719,16 @@ What is the centralized point of control of an iOS app?
 4. UIApplication
    
 **Answer**: 2
+
+
+# Quiz 27
+
+Swift Quiz
+-
+Which of the following state is not an execution state of an iOS app?
+1. Active
+2. Background
+3. Suspended
+4. Passive
+
+**Answer**: 4
