@@ -175,7 +175,7 @@ func serialQueueSolution() {
 }
 ```
 
-# Quiz 4
+# Quiz 4 - 
 
 
 Swift Quiz - Closure
@@ -473,10 +473,11 @@ let result = value
 Output: [1,9,25]
 
 
-# Quiz 14
+# Quiz 14-
 
 Swift Quiz
 -
+What will be the output of following code?
 ```swift
 if (1, "banana") < (2, "apple") {
     print("Alpha")
@@ -679,7 +680,7 @@ Select the correct function that takes an argument of a generic type.
 1. func function<T>(argument: T)()
 2. func function<T>(argument)()
 3. func function(argument)()
-4. 2. func function(argument: <T>)()
+4. func function(argument: <T>)()
 
 **Answer**: 1
 
@@ -696,7 +697,7 @@ What is the generic class that implements all the basic behaviour of a Core Data
 **Answer**: 2
 NSManagedObject is a generic class that implements all the basic behavior required of a managed object. You can create custom subclasses of NSManagedObject , although this is often not required.
 
-# Quiz 25
+# Quiz 25 -
 
 Swift Quiz
 -
@@ -721,7 +722,7 @@ What is the centralized point of control of an iOS app?
 **Answer**: 2
 
 
-# Quiz 27
+# Quiz 27 - 
 
 Swift Quiz
 -
