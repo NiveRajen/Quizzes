@@ -733,3 +733,16 @@ Which of the following state is not an execution state of an iOS app?
 4. Passive
 
 **Answer**: 4
+
+
+# Quiz 28
+
+Swift Quiz
+-
+**In SwiftUI, how do you specify the layout of items inside a `HStack` to evenly space them?**
+   - a) `.padding()`
+   - b) `.alignmentGuide()`
+   - c) `.frame(maxWidth: .infinity)`
+   - d) `.spacing()`
+
+**Answer**: c
