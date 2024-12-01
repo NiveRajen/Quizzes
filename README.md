@@ -740,9 +740,20 @@ Which of the following state is not an execution state of an iOS app?
 Swift Quiz
 -
 **In SwiftUI, how do you specify the layout of items inside a `HStack` to evenly space them?**
-   - a) `.padding()`
-   - b) `.alignmentGuide()`
-   - c) `.frame(maxWidth: .infinity)`
-   - d) `.spacing()`
+    a) `.padding()`
+    b) `.alignmentGuide()`
+    c) `.frame(maxWidth: .infinity)`
+    d) `.spacing()`
 
 **Answer**: c
+
+# Quiz 29
+
+Swift Quiz
+-
+**What is the memory management mechanism used in Swift**
+1. Partitioned allocation
+2. Segmented Memory Management(SMM)
+3. Garbage collection
+4. Automatic reference counting
+**Answer**: 4
