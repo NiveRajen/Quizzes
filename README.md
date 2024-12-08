@@ -763,9 +763,9 @@ Swift Quiz
 SwiftUI Quiz
 -
 **What is the purpose of `GeometryReader` in SwiftUI?**
-    - a) It reads the content of the view and provides dynamic data about its layout.
-    - b) It calculates the geometry of views based on screen size.
-    - c) It automatically adjusts views based on available space.
-    - d) It helps to manage layouts with dynamic content.
-    **Answer**: a
+- a) It reads the content of the view and provides dynamic data about its layout.
+- b) It calculates the geometry of views based on screen size.
+- c) It automatically adjusts views based on available space.
+- d) It helps to manage layouts with dynamic content.
+**Answer**: a
 
