@@ -571,7 +571,7 @@ let greeting = "Hi, \(firstName ?? middleName ?? lastName)"
 
 Answer: Option 3, firstName used before being initialized. 
 
-# Quiz 19
+# Quiz 19 - 
 
 Swift Coding Quiz
 -
@@ -650,7 +650,7 @@ Select the invalid statement from the following answers
 **Answer**: 2
 
 
-# Quiz 22
+# Quiz 22 - 
 
 Swift Quiz
 -
@@ -735,9 +735,9 @@ Which of the following state is not an execution state of an iOS app?
 **Answer**: 4
 
 
-# Quiz 28
+# Quiz 28 - 
 
-Swift Quiz
+SwiftUI Quiz
 -
 **In SwiftUI, how do you specify the layout of items inside a `HStack` to evenly space them?**
     a) `.padding()`
@@ -757,3 +757,15 @@ Swift Quiz
 3. Garbage collection
 4. Automatic reference counting
 **Answer**: 4
+
+# Quiz 30
+
+SwiftUI Quiz
+-
+**What is the purpose of `GeometryReader` in SwiftUI?**
+    - a) It reads the content of the view and provides dynamic data about its layout.
+    - b) It calculates the geometry of views based on screen size.
+    - c) It automatically adjusts views based on available space.
+    - d) It helps to manage layouts with dynamic content.
+    **Answer**: a
+
