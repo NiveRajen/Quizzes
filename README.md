@@ -709,7 +709,7 @@ Select the correct syntax for iterating through the keys and values of a Diction
    
 **Answer**: 1
 
-# Quiz 26
+# Quiz 26 - 
 
 Swift Quiz
 -
@@ -747,7 +747,7 @@ SwiftUI Quiz
 
 **Answer**: c
 
-# Quiz 29
+# Quiz 29 -
 
 Swift Quiz
 -
@@ -758,7 +758,7 @@ Swift Quiz
 4. Automatic reference counting
 **Answer**: 4
 
-# Quiz 30
+# Quiz 30 - 
 
 SwiftUI Quiz
 -
@@ -767,5 +767,6 @@ SwiftUI Quiz
 - b) It calculates the geometry of views based on screen size.
 - c) It automatically adjusts views based on available space.
 - d) It helps to manage layouts with dynamic content.
+  
 **Answer**: a
 
